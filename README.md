@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Actividades
 
-## Getting Started
+Hola, bienvenidos a la sección de ejercicios de React Advanced 2!\
+Espero que te haya gustado todo lo que hemos visto de Next.js y cómo utilizando este framework de React podemos sacarle jugo a los beneficios del servidor y del cliente.\
+En esta ocasión estaremos utilizando la api de Rick and Morty: `https://rickandmortyapi.com/documentation/#rest` para consumir información y crear nuestra app de Next, la cual debe cumplir los siguienter requisitos:
 
-First, run the development server:
+## Requisitos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [ ] Debes estilar con tailwind.
+- [ ] El Layout debe mostrar algún titlo o header que se compartirá entre todas las pages.
+- [ ] El index debe fetchear la data de la api y mostrarle en una grilla de cards.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Card:
+  - [ ] Cada `Card` debe mostrar la imagen (utilizando el componente `Image` de Nextjs), el nombre, la especie y el género del personaje.
+  - [ ] Al clickear la card debe llevarnos a una página de detalle (ver componente `Link` de Next.js).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Detalle de personaje (Ruta dinámica):
+  - [ ] Debe fetchear la data de cada personaje individual (utiliza el id de los parámetros).
+  - [ ] Debe tener un boton para volver al inicio
+  - [ ] Debe tener un componente Table
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Table
+  - [ ] Debe mostrar `status`, `specie` y `gender`.
+  - [ ] Debe tener un botón que al clickearlo se muestren 2 datos más: `origin` y `location`.
+  - [ ] Se debe poder mostrar y ocultar esta data extra mediante un estado (componente de cliente).
 
-## Learn More
+## Recursos y aclaraciones
 
-To learn more about Next.js, take a look at the following resources:
+- [Docs de tailwind](https://tailwindcss.com/docs/installation)
+- [Link con componentes prearmados de Tailwind:](https://www.creative-tim.com/twcomponents)
+- [Docs de Next](https://nextjs.org/docs)
+- Sientete libre de crear la cantidad que quieras de componentes y sub componentes.
+- Puedes agregar cualquier funcionalidad que quieras (filtrado, agregado de favoritos, etc). Mientras más investigues y ejercites mejor!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
